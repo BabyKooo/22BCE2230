@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavya Bhardwaj - Engineering Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('image/colorful-neon-frame-design/5955578.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(221, 212, 232, 0.8);
+            color: #c0189b;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #fff;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(148, 39, 143, 0.7);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+            border-radius: 10px;
+        }
+
+        section.appear {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h1, h2, h3 {
+            color: #1d0e1c;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: rgba(94, 9, 73, 0.8);
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.5s;
+            text-align: center;
+        }
+
+        footer.appear {
+            opacity: 1;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 5px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <header data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+        <div class="hero-section">
+            <h1>Bhavya Bhardwaj</h1>
+            <p>VIT VELLORE</p>
+        </div>
+    </header>
+
+    <section class="animated-section" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+        <h2>About Me</h2>
+        <p>I am a second-year student at Vellore Institute of Technology, Vellore. I am very passionate about everything I do, whether it's coding, starting my own start-up, or dancing. My ambitious personality and hardworking nature help me stand out from the crowd.</p>
+    </section>
+
+    <section class="animated-section" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+        <h2>Education</h2>
+        <p><strong>APEEJAY SCHOOL, NOIDA '21</strong></p>
+        <p><strong>B Tech in computer science from Vellore Institute of Technology</strong></p>
+        <p>Expected Graduation: 2026</p>
+    </section>
+
+    <section class="animated-section" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: C, C++, Java, Python, MATLAB, R, HTML, CSS</li>
+            <li>Technical Skills: Figma, Canva, GIT/GITHUB</li>
+            <li>Other Skills: digital marketing, UI designing, app development (basics)</li>
+        </ul>
+    </section>
+
+    <section class="animated-section" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+        <h2>Projects</h2>
+        <ul>
+            <li>Worked in a startup for a FinTech company</li>
+            <li>Made 2 ecommerce websites for a company</li>
+            <li>Currently working on an app for a big upcoming project</li>
+        </ul>
+    </section>
+
+    <section class="animated-section" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+        <h2>Contact</h2>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/yourusername/" target="_blank">LinkedIn</a></li> <!-- External Link -->
+                <li><a href="mailto:your.email@example.com">Email Me</a></li>
+                <li><a href="page2.html">Page 2</a></li> <!-- Internal Link -->
+            </ul>
+        </nav>
+    </section>
+
+    <footer class="animated-fade-in" data-aos="fade-in" data-aos-duration="800" data-aos-anchor-placement="top-bottom">
+        <p>&copy; 2024 Bhavya Bhardwaj - Engineering Portfolio</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        window.addEventListener('scroll', function () {
+            const footer = document.querySelector('footer');
+            const footerPosition = footer.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (footerPosition < windowHeight) {
+                footer.classList.add('appear');
+            }
+        });
+    </script>
+</body>
+</html>
